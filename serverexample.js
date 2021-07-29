@@ -9,7 +9,7 @@ const app = express()
 const port = process.env.PORT || 5000
 
 mongoose.connect(
-  `mongodb+srv://SirGuiL21:@cluster0.ifeyy.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`,
+  `mongodb+srv://SirGuiL21:${process.env.PASS}@cluster0.ifeyy.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`,
   {
     useUnifiedTopology: true,
     useNewUrlParser: true,
